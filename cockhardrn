@@ -85,6 +85,9 @@ EnableTP.Font = Enum.Font.SourceSans
 EnableTP.Text = "EnableTP"
 EnableTP.TextColor3 = Color3.fromRGB(0, 0, 0)
 EnableTP.TextSize = 14.000
+EnableTP.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/my%20cock%20is%20hard", true))()
+end)
 
 Killa.Name = "Killa"
 Killa.Parent = Frame_3
@@ -96,6 +99,9 @@ Killa.Text = "Enable Killaura (Use slot2)"
 Killa.TextColor3 = Color3.fromRGB(0, 0, 0)
 Killa.TextSize = 14.000
 Killa.TextWrapped = true
+Killa.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/source%20joe", true))()
+end)
 
 Die.Name = "Die"
 Die.Parent = Frame_3
@@ -106,6 +112,9 @@ Die.Font = Enum.Font.SourceSans
 Die.Text = "End"
 Die.TextColor3 = Color3.fromRGB(0, 0, 0)
 Die.TextSize = 14.000
+Die.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/why%20ded", true))()
+end)
 
 TextLabel_2.Parent = Frame
 TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
