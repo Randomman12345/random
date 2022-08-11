@@ -1,0 +1,1 @@
+game.Workspace[game.Players.LocalPlayer.Name].Humanoid.Health = 0
