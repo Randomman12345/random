@@ -1,0 +1,215 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local PlayerImage = Instance.new("ImageLabel")
+local PlayerName = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local EnableTP = Instance.new("TextButton")
+local Killa = Instance.new("TextButton")
+local Die = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local shoutouttoxeqctedjoedeezandeluforbeingmykittens3 = Instance.new("TextLabel")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(143, 2, 0)
+Frame.BorderColor3 = Color3.fromRGB(53, 51, 27)
+Frame.BorderSizePixel = 4
+Frame.Position = UDim2.new(0.699999988, 0, 0.600000024, 0)
+Frame.Size = UDim2.new(0, 217, 0, 239)
+
+Frame_2.Parent = Frame
+Frame_2.Active = true
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BorderColor3 = Color3.fromRGB(53, 51, 27)
+Frame_2.BorderSizePixel = 4
+Frame_2.Position = UDim2.new(0.697203159, 0, -0.00305891782, 0)
+Frame_2.Size = UDim2.new(0, 65, 0, 64)
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = Frame_2
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.Size = UDim2.new(0, 65, 0, 63)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = Frame_2
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.Position = UDim2.new(-0.666047513, 0, 1.078125, 0)
+PlayerName.Size = UDim2.new(0, 98, 0, 50)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-1, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 59, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "the person running this shit rn... is"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+Frame_3.Parent = Frame
+Frame_3.Active = true
+Frame_3.BackgroundColor3 = Color3.fromRGB(157, 7, 9)
+Frame_3.BorderColor3 = Color3.fromRGB(53, 51, 27)
+Frame_3.BorderSizePixel = 4
+Frame_3.Position = UDim2.new(-0.00325764599, 0, 0, 0)
+Frame_3.Size = UDim2.new(0, 85, 0, 127)
+
+EnableTP.Name = "EnableTP"
+EnableTP.Parent = Frame_3
+EnableTP.BackgroundColor3 = Color3.fromRGB(255, 228, 73)
+EnableTP.Size = UDim2.new(0, 45, 0, 25)
+EnableTP.Font = Enum.Font.SourceSans
+EnableTP.Text = "EnableTP"
+EnableTP.TextColor3 = Color3.fromRGB(0, 0, 0)
+EnableTP.TextSize = 14.000
+
+Killa.Name = "Killa"
+Killa.Parent = Frame_3
+Killa.BackgroundColor3 = Color3.fromRGB(255, 228, 73)
+Killa.Position = UDim2.new(0, 0, 0.677165329, 0)
+Killa.Size = UDim2.new(0, 77, 0, 41)
+Killa.Font = Enum.Font.SourceSans
+Killa.Text = "Enable Killaura (Use slot2)"
+Killa.TextColor3 = Color3.fromRGB(0, 0, 0)
+Killa.TextSize = 14.000
+Killa.TextWrapped = true
+
+Die.Name = "Die"
+Die.Parent = Frame_3
+Die.BackgroundColor3 = Color3.fromRGB(255, 228, 73)
+Die.Position = UDim2.new(0, 0, 0.299212605, 0)
+Die.Size = UDim2.new(0, 45, 0, 25)
+Die.Font = Enum.Font.SourceSans
+Die.Text = "End"
+Die.TextColor3 = Color3.fromRGB(0, 0, 0)
+Die.TextSize = 14.000
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.531089783, 0)
+TextLabel_2.Size = UDim2.new(0, 118, 0, 66)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "uhhh guys welcome to this shitty dr script!!!"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.Position = UDim2.new(0.654377878, 0, 0.711297035, 0)
+ImageLabel.Size = UDim2.new(0, 74, 0, 69)
+ImageLabel.Image = "rbxassetid://10552103524"
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(255, 246, 247)
+TextLabel_3.Position = UDim2.new(0, 0, 0.80334723, 0)
+TextLabel_3.Size = UDim2.new(0, 142, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "a skid named enura#1707 made this piece of shit!!!"
+TextLabel_3.TextColor3 = Color3.fromRGB(253, 253, 253)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Name = "shoutout to xeqcted, joe deez and elu for being my kittens :3"
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Parent = Frame
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.BackgroundTransparency = 1.000
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Position = UDim2.new(0.580645144, 0, 0.497907937, 0)
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Size = UDim2.new(0, 91, 0, 50)
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Font = Enum.Font.PatrickHand
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Text = "shoutout to xeqcted, joe deez and elu for being my kittens :3"
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.TextColor3 = Color3.fromRGB(0, 0, 0)
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.TextScaled = true
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.TextSize = 14.000
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.TextWrapped = true
+
+-- Scripts:
+
+local function WYXKUWA_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local frame = script.Parent
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
+	
+	
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.AvatarBust
+	
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isReady = game.Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	frame.PlayerImage.Image = content
+	
+	frame.PlayerName.Text = player.Name
+end
+coroutine.wrap(WYXKUWA_fake_script)()
+local function SNCG_fake_script() -- EnableTP.EnableTPScript 
+	local script = Instance.new('LocalScript', EnableTP)
+
+	script.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/my%20cock%20is%20hard", true))()
+	end)
+end
+coroutine.wrap(SNCG_fake_script)()
+local function HADHMJO_fake_script() -- Killa.KillaScript 
+	local script = Instance.new('LocalScript', Killa)
+
+	script.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/source%20joe", true))()
+	end)
+end
+coroutine.wrap(HADHMJO_fake_script)()
+local function QEFDC_fake_script() -- Die.DieScript 
+	local script = Instance.new('LocalScript', Die)
+
+	script.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/why%20ded", true))()
+	end)
+end
+coroutine.wrap(QEFDC_fake_script)()
+local function NEDBBHX_fake_script() -- Frame.MainScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(NEDBBHX_fake_script)()
