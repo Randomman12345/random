@@ -1,0 +1,14 @@
+while true do
+task.wait(0.05)
+
+local plr = game:GetService("Players").LocalPlayer
+for i,v in pairs(game:GetService("Players"):GetPlayers()) do
+    if v ~= plr and v.Character and v.Character:FindFirstChild("Humanoid") then
+        plr.GwyneddEventUn:FireServer("dealDamage", v.Character.Humanoid, plr.Character["2"], 1)
+    end
+   end
+end
+
+-- GwyneddEventUn pjc
+-- JazekerHoor heim
+--ServerEventik2 mierda tsk 2
