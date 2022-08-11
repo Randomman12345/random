@@ -1,0 +1,21 @@
+while true do
+    task.wait(0.2)
+local randomPlayer = game.Players:GetPlayers()
+[math.random(1,#game.Players:GetPlayers())]
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(randomPlayer.Character.HumanoidRootPart.Position.X, randomPlayer.Character.HumanoidRootPart.Position.Y, randomPlayer.Character.HumanoidRootPart.Position.Z))
+
+if game.Players.LocalPlayer.Character.Humanoid.Health == 0 then
+    break
+end
+
+
+end
+
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(300, -490, 300)
+
+game.StarterGui:SetCore("SendNotification", {
+Title = "",
+Text = "script stopped running because your HumanoidHealth reached 0, L bozo get better",
+Icon = "rbxassetid://10552103524",
+})
