@@ -1,0 +1,51 @@
+local args = {
+    [1] = "abc",
+    [2] = {
+        ["Inventory"] = {
+            [1] = {},
+            [2] = {},
+            [3] = {},
+            [4] = {},
+            [5] = {},
+            [6] = {},
+            [7] = {
+                ["Name"] = "Ulysses's Sword",
+                ["Stack"] = 0
+            },
+            [8] = {},
+            [9] = {},
+            [10] = {},
+            [11] = {},
+            [12] = {},
+            [13] = {},
+            [14] = {
+                ["Name"] = "\226\130\170Black Assassin Shield",
+                ["Stack"] = 0
+            },
+            [15] = {},
+            [16] = {},
+            [17] = {},
+            [18] = {}
+        },
+        ["Equipped"] = {
+            [1] = {
+                 ["Name"] = "Praetorian Gladius",
+                ["Stack"] = 0
+            },
+            [2] = {
+                ["Name"] = "Ulysses's Sword",
+                ["Stack"] = 0
+            }
+        },
+        ["Body"] = {
+            [1] = {},
+            [2] = {},
+            [3] = {},
+            [4] = {},
+            [5] = {}
+        }
+    }
+}
+
+game:GetService("Players").LocalPlayer.GwyneddFunctionDau:InvokeServer(unpack(args))
+game.Workspace[game.Players.LocalPlayer.Name].Humanoid.Health = 0
