@@ -1,5 +1,5 @@
 while true do
-task.wait(0.05)
+task.wait(0.08)
 
 local plr = game:GetService("Players").LocalPlayer
 for i,v in pairs(game:GetService("Players"):GetPlayers()) do
